@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Clicker for Songsterr",
+    "version": "1.0",
+    "description": "Automatically clicks the 'Continue with interruptions' button on Songsterr.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.songsterr.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
